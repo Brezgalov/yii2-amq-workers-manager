@@ -23,7 +23,7 @@
         'queue',
       ],
       'components' => [
-        'workersManager' => \app\workers\WorkersManagerService::class,
+        'workersManager' => WorkersManagerService::class,
         'queue' => [
           'class' => \yii\queue\amqp_interop\Queue::class,
           'host' => '127.0.0.1',
