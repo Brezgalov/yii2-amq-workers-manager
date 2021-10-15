@@ -27,8 +27,13 @@ abstract class AbstractJob extends Model implements JobInterface
             }
         }
 
+        $res = true;
+        try {
+            $res = $this->run($queue);
+        } catch (\Exception $ex) {
+            // silence is golden
+        }
 
-        $res = $this->run($queue);
 
         if ($worker) {
             $worker->is_busy = 0;
