@@ -10,6 +10,7 @@ use Yii;
  * @property int $id
  * @property string $queue_component_name
  * @property int $workers_count
+ * @property string $tested_at
  */
 class WorkersConfigs extends \yii\db\ActiveRecord
 {

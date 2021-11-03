@@ -19,6 +19,7 @@ use yii\db\ActiveRecord;
  * @property string $port
  * @property string|null $user
  * @property string|null $created_at
+ * @property string|null $checked_at
  */
 class WorkersStatuses extends \yii\db\ActiveRecord
 {
